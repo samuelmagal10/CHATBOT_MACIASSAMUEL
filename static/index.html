@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrevistas Técnicas AI</title>
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+            <button onclick="toggleModoOscuro()" class="modo-btn" aria-label="Cambiar modo oscuro">
+        <i class="fas fa-moon"></i> / <i class="fas fa-sun"></i>
+      </button>
+      <h1><i class="fas fa-robot"></i> Entrevistador AI</h1>
+      <p>Prepárate para tu próxima entrevista técnica con nuestro chatbot inteligente.</p>
+    </header>
+
+    <div id="chatbox">
+      <div class="mensaje bot fade-in">
+        <p>¡Hola! 👋 Soy tu entrevistador técnico personal de IA. Estoy aquí para ayudarte a prepararte para tu próxima entrevista.</p>
+        <p>¿Estás listo para simular una entrevista de programación y pulir tus habilidades?</p>
+      </div>
+      <div id="typing-indicator" class="mensaje bot typing-indicator" style="display: none;">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <textarea id="pregunta" placeholder="Escribe tu respuesta o pregunta aquí..." rows="3"></textarea>
+      <button onclick="enviarPregunta()"><i class="fas fa-paper-plane"></i> Enviar</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Entrevistador AI. Desarrollado con pasión.</p>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
